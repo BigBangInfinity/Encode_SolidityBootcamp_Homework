@@ -37,6 +37,9 @@
   npx ts-node .\scripts\GetWinner.ts 0xa5F419A04DA46CB00aa3670D1C68C9238871A6e3
 ```
 
+## Single voter ballot:
+* Discord name: @Hadrien Royo (0x90dDf1Fff5444B93AB9b832b9d4152b9507A13C3)
+* Contract address (Sepolia): 0xb0a1a19fC15cB176F60bBcC498864e05Bb110Efb
 
 ## Simulation of 4 accounts
 
