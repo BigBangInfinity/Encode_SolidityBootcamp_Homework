@@ -3,6 +3,7 @@
 * Discord names:
   * @ching (0x974BFC05C4B51d4B9d84131A9A870EEcCFB77121)
   * @tben140 (0x8cd2573CE3502d85E73D7E287a1950fC1964c0E8)
+  * @Hadrien Royo (0x90dDf1Fff5444B93AB9b832b9d4152b9507A13C3)
 * See also https://honored-cayenne-220.notion.site/Solidity-Homework-2-Team-12-00290a1dfcd248afafd1180cedbb8112
 
  | Function | Description | Transaction from account | TransactionHash
@@ -13,6 +14,7 @@
  | giveRightToVote | give right to vote to 0x974BFC05C4B51d4B9d84131A9A870EEcCFB77121 | 0x8cd2573CE3502d85E73D7E287a1950fC1964c0E8 | 0x4cd0ec6317513a3bb3e38ba60b46e09737f709756ea3d0f4951fa56b001de5da |
  | vote | vote for proposal 3 | 0x974BFC05C4B51d4B9d84131A9A870EEcCFB77121 | 0x54cce7337cda054e06b36140b30a681523942912134d0f1b53b93cd0918996e8 |
  | vote | vote for proposal 2 | 0x8cd2573CE3502d85E73D7E287a1950fC1964c0E8 | 0xf4c85adc29a217949272a0e5e2863b416209b06b10305d7d9dbd7a236662ea20 |
+ | setOwner | change the chairperson to 0x90dDf1Fff5444B93AB9b832b9d4152b9507A13C3 | 0x8cd2573CE3502d85E73D7E287a1950fC1964c0E8 | 0x2939f6398321624b6718990a1840e0fe766abaa832ee727319366922d19da8b3 | 
  
 * Ballot.sol deployed on Sepolia
   ```
