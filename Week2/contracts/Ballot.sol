@@ -46,6 +46,11 @@ contract Ballot {
         }
     }
 
+    function setOwner(address _owner) external {
+        require(msg.sender == chairperson);
+        chairperson = _owner;
+    }
+
     // Give `voter` the right to vote on this ballot.
     // May only be called by `chairperson`.
     function giveRightToVote(address voter) external {
