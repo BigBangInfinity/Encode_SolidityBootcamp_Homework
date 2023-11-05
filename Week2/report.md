@@ -1,5 +1,6 @@
 # Report for Homework Week 2
 ## Team 12 members voting
+* We added a setOwner function to change the chairperson.
 * Discord names:
   * @ching (0x974BFC05C4B51d4B9d84131A9A870EEcCFB77121)
   * @tben140 (0x8cd2573CE3502d85E73D7E287a1950fC1964c0E8)
@@ -39,12 +40,24 @@
   npx ts-node .\scripts\GetWinner.ts 0xa5F419A04DA46CB00aa3670D1C68C9238871A6e3
 ```
 
+  Output:
+```
+Last block number: 4637344
+Last block timestamp: 1699219716 (05/11/2023 21:28:36)
+Proposal1 votes: 0
+Proposal2 votes: 1
+Proposal3 votes: 1
+Promise { <pending> }
+Winning proposal: Proposal2
+```
+
+
 ## Single voter ballot:
 * Discord name: @Hadrien Royo (0x90dDf1Fff5444B93AB9b832b9d4152b9507A13C3)
 * Contract address (Sepolia): 0xb0a1a19fC15cB176F60bBcC498864e05Bb110Efb
 
 ## Simulation of 4 accounts
-
+* One script does the transactions for 4 accounts.
 * Accounts (owned by @ching):
   * Account 1: 0x974BFC05C4B51d4B9d84131A9A870EEcCFB77121
   * Account 2: 0x7d77b0d031B4B8C0444eaE9b778479bbFcd6721a
