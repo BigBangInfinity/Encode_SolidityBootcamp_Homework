@@ -36,3 +36,49 @@
 ```
   npx ts-node .\scripts\GetWinner.ts 0xa5F419A04DA46CB00aa3670D1C68C9238871A6e3
 ```
+
+
+## Simulation of 4 accounts
+
+* Accounts (owned by @ching):
+  * Account 1: 0x974BFC05C4B51d4B9d84131A9A870EEcCFB77121
+  * Account 2: 0x7d77b0d031B4B8C0444eaE9b778479bbFcd6721a
+  * Account 3: 0xf28e0bA425AB5CFFf9B5731dB3f0b439e49aE16A
+  * Account 4: 0xb6e971a41A54178642aC768FD30bE7f7d69e960a
+
+ | Function | Description | Transaction from account | TransactionHash
+ | --- | --- | --- | --- |
+ | Contract creation | Contract created with 3 proposals: Proposal1, Proposal2, Proposal3 | 0x974BFC05C4B51d4B9d84131A9A870EEcCFB77121 | 0x744e42a79e63f7b7ad45c1bf016190aa7b655119db27809f94e77c1cdfb090bd |
+ | giveRightToVote | give right to vote to 0x7d77b0d031B4B8C0444eaE9b778479bbFcd6721a| 0x974BFC05C4B51d4B9d84131A9A870EEcCFB77121 | 0x08bae017098753204045b6ddfe43fb53a95eb884bae3d8b335087520508cfe12|
+ | giveRightToVote | give right to vote to 0xf28e0bA425AB5CFFf9B5731dB3f0b439e49aE16A| 0x974BFC05C4B51d4B9d84131A9A870EEcCFB77121 | 0xd731987743abf36634f40850bbad0e8565de90d1a312997ded2db7e871badf6f|
+ | vote | vote for proposal 3 | 0x7d77b0d031B4B8C0444eaE9b778479bbFcd6721a | 0x540b0e6090ca12392ff4269e18e24c9d3cd0a25dfc2a40e12e09667f7bd3619e |
+ | vote | vote for proposal 3 | 0xf28e0bA425AB5CFFf9B5731dB3f0b439e49aE16A | 0xf11bbfb8d4f3f177b6956b31fd76a50533bbe16de3e90cc4f57a767904bccfd4 |
+ | giveRightToVote | give right to vote to 	0xb6e971a41A54178642aC768FD30bE7f7d69e960a| 0x974BFC05C4B51d4B9d84131A9A870EEcCFB77121 | 0x7fe2c0d718e9edb1178d284f5794333bd6c81208c23cefdbbdb51ec514c91a1b|
+ | delegate | delegate vote to 0xb6e971a41A54178642aC768FD30bE7f7d69e960a | 0x974BFC05C4B51d4B9d84131A9A870EEcCFB77121 | 0x362f550ea0a94fefdc1d7d0a7466b77af7368ea3b05a8a8ffc072d18d5fcf209|
+ | vote | vote for proposal 2 | 0xb6e971a41A54178642aC768FD30bE7f7d69e960a | 0xba98c1d0546786393ffc9c09dd6d5c83752d8c5a7e707b7133d9c4da35dc7f8e |
+
+* Ballot.sol deployed on Sepolia
+  ```
+  npx ts-node .\scripts\DeployWithEthers.ts Proposal1 Proposal2 Proposal3
+  ```
+  Contract address: 0x905a5801E9bbFDF69bAFEeCe82e30f0745340549
+
+* Simulation of 4 accounts
+  ```
+  npx ts-node .\scripts\Simulation.ts 0x905a5801E9bbFDF69bAFEeCe82e30f0745340549
+  ```
+
+* Get proposal winner
+  ```
+  npx ts-node .\scripts\GetWinner.ts 0x905a5801E9bbFDF69bAFEeCe82e30f0745340549  
+  ```
+  Output:
+  ```
+  Last block number: 4636263
+  Last block timestamp: 1699205160 (05/11/2023 17:26:00)
+  Proposal1 votes: 0
+  Proposal2 votes: 2
+  Proposal3 votes: 2
+  Promise { <pending> }
+  Winning proposal: Proposal2
+  ```
