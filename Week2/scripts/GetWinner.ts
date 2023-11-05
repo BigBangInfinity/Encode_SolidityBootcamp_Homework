@@ -18,7 +18,35 @@ async function main() {
     const lastBlockDate = new Date(lastBlockTimestamp * 1000);
     console.log(`Last block timestamp: ${lastBlockTimestamp} (${lastBlockDate.toLocaleDateString()} ${lastBlockDate.toLocaleTimeString()})`);
     //Configuring the wallet
-    const wallet = ethers.Wallet.fromPhrase(process.env.MNEMONIC ?? "", provider);
+
+    let wallet;
+    const mnemonic = process.env.MNEMONIC;
+    const privateKey = process.env.PRIVATE_KEY;
+
+    if (mnemonic) {
+      // Create a wallet from the mnemonic if it exists
+      try {
+        wallet = ethers.Wallet.fromPhrase(process.env.MNEMONIC ?? "", provider);
+        console.log(`Using address from mnemonic: ${wallet.address}`);
+      } catch (e) {
+        throw new Error("Invalid mnemonic provided.");
+      }
+    } else if (privateKey) {
+      // Fall back to using the private key if no mnemonic is available
+      try {
+        wallet = new ethers.Wallet(privateKey, provider);
+        console.log(`Using address from private key: ${wallet.address}`);
+      } catch (e) {
+        throw new Error("Invalid private key provided.");
+      }
+    } else {
+      throw new Error("No mnemonic or private key provided in .env file.");
+    }
+
+
+
+
+    // const wallet = ethers.Wallet.fromPhrase(process.env.MNEMONIC ?? "", provider);
 
     //Attaching the smart contract using Typechain
     const ballotFactory = new Ballot__factory(wallet);
