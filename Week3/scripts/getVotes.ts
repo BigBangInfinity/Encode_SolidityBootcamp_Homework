@@ -12,7 +12,6 @@ async function main() {
     const wallet2 = new ethers.Wallet(process.env.PRIVATE_KEY2 ?? "", provider);
     const wallet3 = new ethers.Wallet(process.env.PRIVATE_KEY3 ?? "", provider);
     const wallet4 = new ethers.Wallet(process.env.PRIVATE_KEY4 ?? "", provider);
-    console.log(`Using address ${wallet.address}`);
 
     const contractAddress = "0xAE7B4276c4Eef71920ff429Ea20847B933401b58";
     const ballotFactory = new TokenizedBallot__factory(wallet);
