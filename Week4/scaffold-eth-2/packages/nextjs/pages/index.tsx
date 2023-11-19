@@ -419,7 +419,6 @@ function BallotApiData(params: { address: `0x${string}` }) {
       <Proposal1FromApi></Proposal1FromApi>
       <Proposal2FromApi></Proposal2FromApi>
         <WinningProposalFromApi></WinningProposalFromApi>
-        <RequestTokens address={params.address}></RequestTokens>
         {/* <TotalSupplyFromApi></TotalSupplyFromApi>
         <TokenNameFromApi></TokenNameFromApi>
         <RequestTokens address={params.address}></RequestTokens> */}
