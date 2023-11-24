@@ -1,5 +1,7 @@
 # Report for Homework Week4 (new submission)
 
+Collaboration between @ching, @hadrienroyo, @tben140
+
 Old submission: https://github.com/BigBangInfinity/Encode_SolidityBootcamp_Homework/blob/main/Week4/report.md
 * Deploy MyToken:
   ```
