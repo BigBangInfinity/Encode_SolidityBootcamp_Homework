@@ -1,4 +1,6 @@
-# Report for Homework Week4
+# Report for Homework Week4 (new submission)
+
+Old submission: https://github.com/BigBangInfinity/Encode_SolidityBootcamp_Homework/blob/main/Week4/report.md
 * Deploy MyToken:
   ```
   C:\ballotcontract>npx ts-node .\scripts\deployMyToken.ts
