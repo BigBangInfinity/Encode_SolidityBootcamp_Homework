@@ -13,6 +13,7 @@
 * Request 
 
 ![image](https://github.com/BigBangInfinity/Encode_SolidityBootcamp_Homework/assets/37957341/eb693558-f3b4-447e-b28b-05ad974c2162)
+
   Four wallets request token:
   * 0x974BFC05C4B51d4B9d84131A9A870EEcCFB77121
   * 0x7d77b0d031B4B8C0444eaE9b778479bbFcd6721a
