@@ -39,7 +39,6 @@ function PageBody() {
     <>
       <p className="text-center text-lg">Here we are!</p>
       <WalletInfo></WalletInfo>
-      {/* <RandomWord></RandomWord> */}
     </>
   );
 }
@@ -54,8 +53,6 @@ function WalletInfo() {
       <div>
         <p>Your account address is {address}</p>
         <p>Connected to the network {chain?.name}</p>
-        {/* <WalletAction></WalletAction>
-        <WalletAction2></WalletAction2> */}
         <WalletBalance address={address as `0x${string}`}></WalletBalance>
         <TokenInfo address={address as `0x${string}`}></TokenInfo>
         <CheckStateBox></CheckStateBox>
@@ -67,11 +64,6 @@ function WalletInfo() {
         <BetBox></BetBox>
         <PrizeBox address={address as `0x${string}`}></PrizeBox>
         <OwnerPrizeBox></OwnerPrizeBox>
-        {/* <ApiData address={address as `0x${string}`}></ApiData>
-        <DelegateBox address={address as `0x${string}`}></DelegateBox>
-        <BallotApiData address={address as `0x${string}`}></BallotApiData>
-
-        <CastVotes2></CastVotes2> */}
       </div>
     );
   if (isConnecting)
@@ -832,20 +824,6 @@ function Burn() {
       </div>
     </div>
   );
-}
-
-async function burnTokens(index: string, amount: string) {
-  const contractAddress = await contract.getAddress();
-  const allowTx = await token
-    .connect(accounts[Number(index)])
-    .approve(contractAddress, ethers.MaxUint256);
-  const receiptAllow = await allowTx.wait();
-  console.log(`Allowance confirmed (${receiptAllow?.hash})\n`);
-  const tx = await contract
-    .connect(accounts[Number(index)])
-    .returnTokens(ethers.parseUnits(amount));
-  const receipt = await tx.wait();
-  console.log(`Burn confirmed (${receipt?.hash})\n`);
 }
 
 
