@@ -38,7 +38,6 @@ function PageBody() {
   return (
     <>
       <p className="text-center text-lg">Here we are!</p>
-      <p>{process.env.NEXT_PUBLIC_TOKEN_ADDRESS}</p>
       <WalletInfo></WalletInfo>
       {/* <RandomWord></RandomWord> */}
     </>
