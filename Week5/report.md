@@ -10,6 +10,14 @@ Collaboration between @Ching#1844, @hadrienroyo, @tben140, Team 12
   Lottery contract deployed at 0x6C8994447111c20F3eD36CCF3DA3ff808153B905 (Sepolia)
 
   Token contract deployed at 0x45c33eF2bD2746752867398828959c1A9ce99eDb (Sepolia)
+
+  ```
+  const BET_PRICE = 1;
+  const BET_FEE = 0.2;
+  const TOKEN_RATIO = 1000n;
+  ```
+
+  Each bet costs 1.2 tokens, 1 token goes to the prize pool, 0.2 token fee goes to the owner pool. 1 ETH = 1000 tokens.
   
 * Launch scaffold eth:
   ```
