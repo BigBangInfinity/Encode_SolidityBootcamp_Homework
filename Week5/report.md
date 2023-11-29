@@ -1,4 +1,6 @@
-# Report for Homework Week5
+# Report for Homework Week5 (old submission)
+
+New submission with web based frontend: https://github.com/BigBangInfinity/Encode_SolidityBootcamp_Homework/blob/main/Week5_vercel/README.md
 
 Collaboration between @Ching#1844, @hadrienroyo, @tben140, Team 12
 
