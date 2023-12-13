@@ -11,6 +11,7 @@ Github repos:
 ## Deployments
 
 Frontend deployed on vercel: https://ballot-animal-nft-shared-s-git-050158-bigbanginfinitys-projects.vercel.app/
+
 NestJS API deployed on Render: https://ballot2-animal-nft.onrender.com/route
 
 NFT token contract deployed on Sepolia: https://sepolia.etherscan.io/address/0x11e1b946c16a35cb45c8e93137a2a592fce9dba6
