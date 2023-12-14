@@ -3,6 +3,11 @@ by Team 12 Encode Solidity Bootcamp
 
 Note: make sure that 0x231815987D25f5b6CE42F0352e27BCC1e61d39db (server wallet ETH for minting NFTs and top it up)
 
+# Update:
+
+Frontend V2 (github): https://github.com/BigBangInfinity/ballot_animal_NFT_shared-scaffold-eth-2_render_vercel_v2
+Frontend V2 (Vercel): https://ballot-animal-nft-shared-scaffold-eth-2-render-vercel-v2-nextjs.vercel.app/
+
 ## Github repos
 Github repos:
 
