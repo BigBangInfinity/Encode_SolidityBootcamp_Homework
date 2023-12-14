@@ -1,6 +1,8 @@
 # ZOO DAO 
 by Team 12 Encode Solidity Bootcamp
 
+Note: make sure that 0x231815987D25f5b6CE42F0352e27BCC1e61d39db (server wallet ETH for minting NFTs and top it up)
+
 ## Github repos
 Github repos:
 
