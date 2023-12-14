@@ -3,7 +3,7 @@ by Team 12 Encode Solidity Bootcamp
 
 Notes: 
 *  make sure that 0x231815987D25f5b6CE42F0352e27BCC1e61d39db (server wallet) has enough ETH and top it up
-*  NestJS API on Render might take a minute to turn after long time of inactivity
+*  NestJS API on Render might take one or few minutes to turn after long time of inactivity
 
 ## Update to Frontend (V2):
 
